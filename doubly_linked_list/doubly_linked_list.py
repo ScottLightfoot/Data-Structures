@@ -4,10 +4,10 @@ as well as its next node in the List.
 """
 class ListNode:
     def __init__(self, value, prev=None, next=None):
-        self.prev = prev
         self.value = value
+        self.prev = prev
         self.next = next
-            
+
 """
 Our doubly-linked list class. It holds references to 
 the list's head and tail nodes.
@@ -27,6 +27,8 @@ class DoublyLinkedList:
     the old head node's previous pointer accordingly.
     """
     def add_to_head(self, value):
+        self.length += 1
+        
         pass
         
     """

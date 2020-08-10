@@ -54,8 +54,8 @@ class LinkedList:
         if self.head == None:
             return None
         else:
-            max_val = 0
             curr = self.head
+            max_val = curr.get_val()
             while curr.get_next() is not None:
                 max_val = max(max_val, curr.get_val())
                 curr = curr.get_next()
