@@ -29,5 +29,5 @@ class LRUCache:
     want to overwrite the old value associated with the key with
     the newly-specified value.
     """
-    def set(self, key, value):
+    def set_pair(self, key, value):
         pass
