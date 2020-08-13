@@ -35,3 +35,10 @@ class CacheTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+ while nums:
+            i = nums.pop()
+            test = len(nums)
+            nums = [j for j in nums if j != i]
+            if len(nums) == test:
+                return i
